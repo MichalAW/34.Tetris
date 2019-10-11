@@ -24,14 +24,13 @@ function Square(props){
 
 
 class App extends React.Component{
-  state = {
-    board : [
-            ['e','e','e'],
-            ['b','b','b'],
-            ['e','e','e']
-          ],
-		currentPiece : [ [1,0],[1,1],[1,2] ]
-   }
+	state = {
+		board : [
+			['e','e','e'],
+			['b','b','b'],
+			['e','e','e']
+		],
+	}
 	
 	makeRow = (num) =>{
 		return(
@@ -42,39 +41,10 @@ class App extends React.Component{
 			</tr>
 		)		
 	}
-			
-
-
-	rotate = () =>{
-		let boardCopy = this.state.board.slice();
-		let currentPieceCopy = this.state.currentPiece.slice();
-		
-		currentPieceCopy[0][0] += -1
-		currentPieceCopy[0][1] += 1
-		currentPieceCopy[1][0] += 0
-		currentPieceCopy[1][1] += 0
-		currentPieceCopy[2][0] += 1
-		currentPieceCopy[2][1] += -1
-		
-		for(let i = 0; i < this.state.currentPiece.length; i++){
-			boardCopy[this.state.currentPiece[i][0]][this.state.currentPiece[i][1]] = 'e'
-		}
-		
-		for(let i = 0; i < currentPieceCopy.length; i++){
-			boardCopy[currentPieceCopy[i][0]][currentPieceCopy[i][1]] = 'b'
-		}
-		
-		this.setState({
-			board: boardCopy,
-			currentPiece: currentPieceCopy
-		})
-		console.log(this.state.board)
-	}
   
 	render(){ 
         return (
             <div>
-                <button onClick = {this.rotate}>Rotate</button>
                 <table>
                     <tbody>
                         {this.makeRow(0)}
