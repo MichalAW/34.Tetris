@@ -18,7 +18,7 @@ function Square(props){
 	
 	
     return (
-        <td style={stylez}></td>
+		<td style={stylez}></td>
     );
 }
 
@@ -34,11 +34,59 @@ class App extends React.Component{
 	
 	makeRow = (num) =>{
 		return(
-			<tr>
-				<Square colorKey={this.state.board[num][0]}/>
-				<Square colorKey={this.state.board[num][1]}/>	
-				<Square colorKey={this.state.board[num][2]}/>
-			</tr>
+			<section className="cols">
+				<div className="col-one">
+					<tr>
+						<Square colorKey={this.state.board[num][0]}/>
+						<Square colorKey={this.state.board[num][1]}/>	
+						<Square colorKey={this.state.board[num][2]}/>
+					</tr>
+					<tr>
+						<Square colorKey={this.state.board[num][0]}/>
+						<Square colorKey={this.state.board[num][1]}/>	
+						<Square colorKey={this.state.board[num][2]}/>
+					</tr>
+					<tr>
+						<Square colorKey={this.state.board[num][0]}/>
+						<Square colorKey={this.state.board[num][1]}/>	
+						<Square colorKey={this.state.board[num][2]}/>
+					</tr>
+				</div>
+					<div className="col-two">
+					<tr>
+						<Square colorKey={this.state.board[num][0]}/>
+						<Square colorKey={this.state.board[num][1]}/>	
+						<Square colorKey={this.state.board[num][2]}/>
+					</tr>
+					<tr>
+						<Square colorKey={this.state.board[num][0]}/>
+						<Square colorKey={this.state.board[num][1]}/>	
+						<Square colorKey={this.state.board[num][2]}/>
+					</tr>
+					<tr>
+						<Square colorKey={this.state.board[num][0]}/>
+						<Square colorKey={this.state.board[num][1]}/>	
+						<Square colorKey={this.state.board[num][2]}/>
+					</tr>
+				</div>
+					<div className="col-three">
+					<tr>
+						<Square colorKey={this.state.board[num][0]}/>
+						<Square colorKey={this.state.board[num][1]}/>	
+						<Square colorKey={this.state.board[num][2]}/>
+					</tr>
+					<tr>
+						<Square colorKey={this.state.board[num][0]}/>
+						<Square colorKey={this.state.board[num][1]}/>	
+						<Square colorKey={this.state.board[num][2]}/>
+					</tr>
+					<tr>
+						<Square colorKey={this.state.board[num][0]}/>
+						<Square colorKey={this.state.board[num][1]}/>	
+						<Square colorKey={this.state.board[num][2]}/>
+					</tr>
+				</div>
+			</section>
 		)		
 	}
   
