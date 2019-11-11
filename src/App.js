@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-
 function Square(props){
-	
+	// key for all colorss
 	function getColor(key){
 		switch(key) {
 			case "e" : return 'grey';
