@@ -11,6 +11,20 @@ td {
     margin: 0;
 }
 
+.grey-row {
+    Square {
+        background-color: grey;
+    }
+}
+
+.blue-row {
+    background-color: blue;
+}
+
+.violet-row {
+    background-color: violet;
+}
+
 .cols {
     display: flex;
     .col-one {
@@ -41,8 +55,6 @@ table {
     margin: auto;
     padding-bottom: 20px;
 }
-
-
 
 .colors-change {
     .grey {

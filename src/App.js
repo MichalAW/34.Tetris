@@ -35,51 +35,51 @@ class App extends React.Component{
 		return(
 			<section className="cols">
 				<div className="col-one">
-					<tr>
+					<tr className="grey-row">
 						<Square colorKey={this.state.board[num][0]}/>
 						<Square colorKey={this.state.board[num][1]}/>	
 						<Square colorKey={this.state.board[num][2]}/>
 					</tr>
-					<tr>
+					<tr className="blue-row">
 						<Square colorKey={this.state.board[num][0]}/>
 						<Square colorKey={this.state.board[num][1]}/>	
 						<Square colorKey={this.state.board[num][2]}/>
 					</tr>
-					<tr>
-						<Square colorKey={this.state.board[num][0]}/>
-						<Square colorKey={this.state.board[num][1]}/>	
-						<Square colorKey={this.state.board[num][2]}/>
-					</tr>
-				</div>
-					<div className="col-two">
-					<tr>
-						<Square colorKey={this.state.board[num][0]}/>
-						<Square colorKey={this.state.board[num][1]}/>	
-						<Square colorKey={this.state.board[num][2]}/>
-					</tr>
-					<tr>
-						<Square colorKey={this.state.board[num][0]}/>
-						<Square colorKey={this.state.board[num][1]}/>	
-						<Square colorKey={this.state.board[num][2]}/>
-					</tr>
-					<tr>
+					<tr className="violet-row">
 						<Square colorKey={this.state.board[num][0]}/>
 						<Square colorKey={this.state.board[num][1]}/>	
 						<Square colorKey={this.state.board[num][2]}/>
 					</tr>
 				</div>
-					<div className="col-three">
-					<tr>
+				<div className="col-two">
+					<tr className="grey-row">
 						<Square colorKey={this.state.board[num][0]}/>
 						<Square colorKey={this.state.board[num][1]}/>	
 						<Square colorKey={this.state.board[num][2]}/>
 					</tr>
-					<tr>
+					<tr className="blue-row">
 						<Square colorKey={this.state.board[num][0]}/>
 						<Square colorKey={this.state.board[num][1]}/>	
 						<Square colorKey={this.state.board[num][2]}/>
 					</tr>
-					<tr>
+					<tr className="violet-row">
+						<Square colorKey={this.state.board[num][0]}/>
+						<Square colorKey={this.state.board[num][1]}/>	
+						<Square colorKey={this.state.board[num][2]}/>
+					</tr>
+				</div>
+				<div className="col-three">
+					<tr className="grey-row">
+						<Square colorKey={this.state.board[num][0]}/>
+						<Square colorKey={this.state.board[num][1]}/>	
+						<Square colorKey={this.state.board[num][2]}/>
+					</tr>
+					<tr className="blue-row">
+						<Square colorKey={this.state.board[num][0]}/>
+						<Square colorKey={this.state.board[num][1]}/>	
+						<Square colorKey={this.state.board[num][2]}/>
+					</tr>
+					<tr className="violet-row">
 						<Square colorKey={this.state.board[num][0]}/>
 						<Square colorKey={this.state.board[num][1]}/>	
 						<Square colorKey={this.state.board[num][2]}/>
